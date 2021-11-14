@@ -49,4 +49,4 @@ jobs:
         protocol: ftps-legacy
         # Folder to upload from, must end with trailing slash /
         local-dir: ./
-        server-dir: ./public_html/api
+        server-dir: ./public_html/api/
