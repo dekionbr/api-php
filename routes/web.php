@@ -13,9 +13,13 @@
 |
 */
 
-$router->group(['prefix' => 'api/v1'], function () use ($router) {
+$router->get('/', function () use ($router) {
+    return phpinfo();
+});
 
-    $router->get('/login', function () use ($router) {
+$router->group(['prefix' => '/v1'], function () use ($router) {
+
+    $router->post('/login', function () use ($router) {
         return ['user' => ['name' => 'joão',
             'address' => ['street' => 'Rua A',
                 'number' => 1001]
