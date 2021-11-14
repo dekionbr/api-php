@@ -46,6 +46,7 @@ jobs:
         # Server port to connect to (read your web hosts docs)
         port: 21
         # protocol to deploy with - ftp, ftps, or ftps-legacy
-        protocol: ftps
+        protocol: ftps-legacy
         # Folder to upload from, must end with trailing slash /
         local-dir: ./
+        server-dir: ./public_html/api
